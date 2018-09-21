@@ -1,0 +1,204 @@
+/* formatting for each page */
+
+body {
+    background-image: url("../images/background.png");
+}
+header {
+    background-color: #ffffff;
+    width: 100%;
+    height: 55px;
+    margin-top: 0px;
+    border: 1px solid #cccccc;
+    position: relative;
+    resize: both
+}
+
+h1 {
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    width: 17.5%;
+    height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    margin: 0px;
+    padding-top: 15px;
+    position: absolute;
+    left: 250px;
+    z-index: 3; 
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    left: 20px;
+    margin-top: 5px;
+}
+
+hr {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+nav {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    right: 228px; 
+    top: 20px;    
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: silver
+}
+
+footer {
+    
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: darkgray;
+    height: 41px;
+}
+
+.footertext {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8.5px;
+    color: azure;
+    margin-top: 22px;
+}
+
+.horizontalrow {
+    background-color: #4aaaa5;
+    width: 100%;
+    height: 5px;
+    position: relative;
+    /* top: 67px; */
+}
+
+.section1 {
+    width: 960px;
+    height: 525px;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    border: 1px solid #dddddd;
+    position: relative;
+    top: 30px;
+    left: 250px;
+    overflow: auto;
+}
+
+.pagecontent {
+    width: 960px;
+    height: 410px;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #dddddd;
+    position: relative;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30px;
+    border-radius: 3px;
+    clear: both;
+
+}
+
+.formcontent {
+    position: absolute;
+    float: left;
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    clear: both;
+    left: 15px;
+}
+
+/* End combined pages formatting */
+
+.input, .infopiece {
+    float: left;
+    clear: both;
+    width: 96%;
+}
+
+textarea {
+    /* width: 85%;
+    resize: none; */
+}
+
+.labels {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#finalbutton {
+    position: relative;
+    float: left;
+    clear: both;
+    background-color: #4aaaa5;
+    color: white;
+    height: 40px;
+    width: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    /* text-align: middle; */
+    border-style: none;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+.headshot {
+    float: left;
+    height: 150px;
+    width: 150px;
+    margin: 10px 30px 10px 25px;
+}
+
+.aboutme {
+    line-height: 1.5;
+}
+
+p {
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.centered {
+    border: 5px solid #4aaaa5;
+    background-color: #4aaaa5;
+    color: white;
+    width: 190px;
+    height: 30px;
+    top: 125px;
+    /* left: 0px; */
+    position: absolute;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#pbox {
+    margin-left:20px;
+    float:left;
+    position: relative;
+    
+
+}
