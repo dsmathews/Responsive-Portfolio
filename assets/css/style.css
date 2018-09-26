@@ -231,3 +231,38 @@ textarea {
     
 
 }
+
+@media screen and (max-width: 640px) {
+    
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: calc(1240px - 1em);;
+    }
+    
+    #logo {
+        width: 100%;
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+
+    nav {
+        width: 100%;
+        left: 40px;
+    
+    }
+
+    a {
+        align-content: center;
+    }
+
+    .headshot {
+        max-width: calc(1420px - 1em);
+    }
+
+    #main-container {
+        max-width: calc(1240px - 1em)
+    }
+
+}
