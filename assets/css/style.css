@@ -239,8 +239,7 @@ textarea {
         max-width: calc(960px - 1em);
     }
     .main-section {
-        right: 200px;
-        max-width: calc(500px - 1em);
+        max-width: calc(600px - 1em);
         margin-left: 30px;
     }
     #logo {
@@ -252,15 +251,22 @@ textarea {
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .container {
-        max-width: calc(960px - 1em);
+        max-width: calc(750px - 1em);
     }
 
     .main-section {
-        max-width: calc(860px - 1em);
+        max-width: 98%;
         margin-left: 10px;
+        margin-right: 10px;
     }
+
+    #main-container {
+        width: 100%;
+    }
+
+
 
     #logo {
         margin-left: 10px;
@@ -271,20 +277,37 @@ textarea {
 
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (max-width: 640px) {
     .container {
-        max-width: calc(960px - 1em);
+        max-width: calc(640px - 200px);
     }
     .main-section {
-        right: 200px;
-        max-width: calc(500px - 1em);
-        margin-left: 30px;
+        /* right: 200px; */
+        max-width: calc(620px - 1em);
+        margin-left: 10px;
+        margin-right: 10px;
     }
     #logo {
-        margin-left: 30px;
-    }
-    nav {
-        margin-right: 20px;
+        width: 100%;
+        height: 35px;
+        font-weight: 700;
+        line-height: 30px;
+        font-size: 24px;
     }
 
-}
+    #masthead {
+        margin-bottom: 10px;
+        height: 90px;
+        overflow: auto;
+
+    }
+
+    nav {
+        margin-right: 40px;
+    }
+
+    a {
+        margin-right: 30px;
+    }
+
+    
