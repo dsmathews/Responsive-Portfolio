@@ -1,93 +1,138 @@
-/* formatting for each page */
+/* general */
 
 body {
     background-image: url("../images/background.png");
 }
-header {
-    background-color: #ffffff;
+
+
+* {
+    box-sizing: border-box
+}
+
+.container {
     width: 100%;
-    height: 55px;
-    margin-top: 0px;
-    border: 1px solid #cccccc;
-    position: relative;
-    resize: both
-}
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+    max-width: calc(960px - 1em);
+  }
+  
 
-h1 {
-    background-color: #4aaaa5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-    width: 17.5%;
-    height: 40px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    align-content: center;
-    margin: 0px;
-    padding-top: 15px;
-    position: absolute;
-    left: 250px;
-    z-index: 3; 
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5
 }
-
-h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+h1,
+h2,
+h3 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 700;
     color: #4aaaa5;
+  }
+  
+h1 {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #ddd;
+  }
+  
+h2 {
     font-size: 22px;
-    font-weight: bold;
-    position: relative;
-    left: 20px;
-    margin-top: 5px;
-}
-
+  }
+  
 hr {
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
+    max-width: calc(960px - 1em);
+    /* I like the calc value to use in this responsive exercise. Looking this up on CSS tricks and it's use in the reccomended file shows how the css uses a math pre-processor to calculate length. */
+}  
+  /* header */
+  
+#masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #fff;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+  }
+  
+#logo {
+    float: left;
+    width: 250px;
+    height: 90px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: #4aaaa5;
+  }
+  
 nav {
     float: right;
+    margin-top: 25px;
+  }
+  
+nav a {
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: silver;
     font-family: Arial, Helvetica, sans-serif;
-    position: fixed;
-    right: 228px; 
-    top: 20px;    
-}
-
-li {
-    display: inline;
-}
-
-a {
     text-decoration: none;
-    color: silver
-}
+    border-left: 1px solid #efefef;
+  }
+  
+/* Footer */
 
 footer {
-    
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    background-color: darkgray;
-    height: 41px;
-}
+    padding: 30px 0;
+    clear: both;
+    font-size: 12px;
+    color: #fff;
+    color: #ccc;
+    text-align: center;
+    background: darkgray;
+    border-top: 8px solid #4aaaa5;
+    height: 50px;
+  }
 
 .footertext {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 8.5px;
+    font-size: 8px;
     color: azure;
     margin-top: 22px;
 }
 
-.horizontalrow {
-    background-color: #4aaaa5;
-    width: 100%;
-    height: 5px;
-    position: relative;
-    /* top: 67px; */
-}
+/* Page Contents/Main */
 
-.section1 {
+
+/* From Reccomended example */
+#main-container {
+    padding-top: 130px;
+    min-height: calc(100vh - 70px);
+  }
+  
+.main-section {
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  
+
+  /*Deprecated because original page was rewritten with a more logical flow from example. */
+/* .section1 { */
     width: 960px;
     height: 525px;
     background-color: #ffffff;
@@ -97,10 +142,9 @@ footer {
     position: relative;
     top: 30px;
     left: 250px;
-    overflow: auto;
 }
 
-.pagecontent {
+/* .pagecontent { */
     width: 960px;
     height: 410px;
     background-color: #ffffff;
@@ -115,28 +159,28 @@ footer {
     clear: both;
 
 }
+/* End deprecation */
 
 .formcontent {
-    position: absolute;
     float: left;
-    width: 90%;
+    min-width: calc(960px - 50px);
     margin-left: 10px;
     margin-right: 10px;
     clear: both;
-    left: 15px;
 }
 
-/* End combined pages formatting */
 
-.input, .infopiece {
+.input {
     float: left;
     clear: both;
     width: 96%;
+    border: 1px solid darkgray;
+    cursor: pointer;
 }
 
 textarea {
-    /* width: 85%;
-    resize: none; */
+    height: 180px;
+    cursor: pointer;
 }
 
 .labels {
@@ -158,29 +202,14 @@ textarea {
     border-style: none;
     margin-top: 15px;
     border-radius: 3px;
+    cursor: crosshair;
 }
 
 .headshot {
     float: left;
-    height: 150px;
-    width: 150px;
-    margin: 10px 30px 10px 25px;
-}
-
-.aboutme {
-    line-height: 1.5;
-}
-
-p {
-    line-height: 1.5;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 15px;
-    margin-right: 20px;
-}
-
-img {
-    width: 200px;
     height: 200px;
+    width: 200px;
+    margin: 10px 30px 10px 25px;
 }
 
 .centered {

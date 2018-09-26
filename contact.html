@@ -11,30 +11,26 @@
 </head>
 
 <body>
-    <header>
-        <div class="top">
-            <h1>Scott Mathews</h1>
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo">Scott Mathews</a>
+            <nav>
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-        <nav>
-            <ul class="link">
-                <li><a href="index.html">About&nbsp;&nbsp;|</a></li>
-                <li><a href="portfolio.html">&nbsp;&nbsp;Portfolio&nbsp;&nbsp;|</a></li>
-                <li><a href="#">&nbsp;&nbsp;Contact&nbsp;&nbsp;|</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main class="section1">
-        <br />
+    <div id="main-container" class="container">
+        <section class="main-section">
         <h2>Contact</h2>
-
         <hr />
-        <!-- <div class="row2"></div> -->
-
+        <br />
         <form class="formcontent">
             <div class="labels">Name</div>
             <input class="input" type="text" name="name" placeholder="John Smith">
-            <br/>
+            <br />
             <div class="labels">Email</div>
             <input class="input" type="text" name="email" placeholder="example@gmail.com">
             <br />
@@ -42,8 +38,9 @@
             <textarea class="input" rows="15" cols="84"></textarea>
             <input id="finalbutton" type="submit" value="submit">
         </form>
-    </main>
-    
+        </section>
+    </div>
+
     <footer>
         <div class="horizontalrow"></div>
         <section class="footertext">Copyright ©</section>
